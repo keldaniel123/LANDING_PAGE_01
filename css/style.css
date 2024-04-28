@@ -528,11 +528,32 @@ header .btn_group {
   padding: 20px;
 }
 
+@media screen and (max-width: 364px) {
+  .form {
+   display: flex;
+   flex-direction: column;
+}
+  .form .input_container {
+   padding: 10px 75px 10px 20px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   body {
     max-width: 100%;
     margin: auto;
   }
+  picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  picture > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+ 
   .header_section header {
     display: flex;
     padding: 16px 0;
@@ -548,33 +569,44 @@ header .btn_group {
     margin: 0;
   }
   .main_header .main_text h1 {
-    font-size: 35px;
+    font-size: 30px;
     text-shadow: none;
   }
   .main_header .main_text p {
-    padding: 25px 26px;
+    padding: 24px 0px;
     text-shadow: none;
-    font-weight: var(--fw-500);
+    font-weight: var(--fw-400);
   }
   .main_header .form {
     max-width: 100%;
     margin: auto;
+    gap: 7px;
   }
   .form input {
-    padding: 10px 15px;
+    padding: 10px 11px 10px 15px;
     box-shadow: none;
     outline: #3d495a;
   }
+
+  ::placeholder {
+    font-weight: var(--fw-400);
+    font-size: 16px;
+  }
+  .btn {
+    padding: 12px 20px;
+    font-weight: var(--fw-400);
+    font-size: 15px;
+  }
   .main_section .main {
-    margin: 35px 0 0 0;
+    margin: 35px 0 28px 0;
     padding: 0;
   }
   .main_section .main h1 {
-    font-size: 30px;
+    font-size: 25px;
     margin: auto;
   }
   .main_section .main p {
-    padding: 15px 36px;
+    padding: 15px 0px;
   }
 .main_section_picture_1 {
  display: none;
@@ -588,10 +620,10 @@ header .btn_group {
   padding: 0;
 } 
 .user_stories h1 {
-  font-size: 30px;
+  font-size: 25px;
 }
 .user_stories p {
-  padding: 15px 36px;
+  padding: 15px 0px;
   margin: auto;
 }
 
@@ -601,24 +633,40 @@ header .btn_group {
   padding: 48px 0;
 }
 .comment h2{
-  font-size: 30px;
+  font-size: 25px;
+  margin: 0 0 26px 0;
 }
 .right_icon img {
   top: 0%;
-  width: 30%;
-  height: 23%;
+  width: 28%;
+  height: 18%;
 }
 .left_icon img{
   bottom: 0%;
-  left: -5%;
-  width: 30%;
-  height: 30%;
+  left: 0%;
+  width: 33%;
+  height: 22%;
+}
+.carousers_card h3 {
+  font-weight: var(--fw-700);
+  font-size: 23px;
+}
+.carousers_card p {
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: var(--fw-400);
+}
+.user_icon_name h4 {
+  font-weight: var(--fw-500);
+} 
+.user_icon_name span {
+  font-weight: var(--fw-400);
 }
 .fav_tool_text {
   width: 90%;
 }
 .fav_tool_text h1 {
-  font-size: 30px;
+  font-size: 25px;
 }
 .fav_tool_text p {
   font-weight: var(--fw-400);
@@ -641,22 +689,32 @@ header .btn_group {
   text-align: center;
 }
 .fav_tools .tool h4 {
-  font-size: 27px;
+  font-size: 23px;
   padding-bottom: 10px;
   font-weight: var(--fw-700);
 }
+.FQA {
+  padding: 40px 0 40px 0;
+}
 .frequently_question {
   width: 90%;
+  padding: 0 0 35px 0;
 }
 .frequently_question h1 {
-  font-size: 30px;
+  font-size: 25px;
+}
+.accordion 
+.accordion-header{
+  padding: 16px;
+  line-height: 20px;
+  font-weight: var(--fw-500);
 }
 .accordion {
   max-width: 95%;
 }
 .accordion-content.active 
 .accordion-text {
-  height: 200px;
+  height: 250px;
 }
 .footer_container {
   width: 90%;
@@ -684,3 +742,81 @@ header .btn_group {
   display: none;
 }
 }
+@media screen and (max-width: 320px) {
+  .frequently_question {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px){
+  .main > p {
+    padding: 20px 0;
+  }
+  .users {
+    padding: 40px 0;
+  }
+  .user_stories > p {
+    /* padding: 0 86px 40px; */
+    margin: 0;
+  }
+  .image-card img {
+    width: 100%;
+  }
+  #nav-btn {
+    /* display: none; */
+  }
+  .comment {
+    max-width: 66%;
+  }
+  .right_icon img{
+    height: 23%;
+    width: 23%;
+  }
+  .left_icon img {
+    width: 23%;
+    height: 23%;
+  }
+  /* .fav_tool_text {
+    width: 67%;
+  } */
+
+}
+@media screen and (max-width: 1024px){
+  .comment {
+    max-width: 90%;
+  }
+.main > p {
+  padding: 25px 50px 25px;
+}
+.users {
+  padding: 30px 0;
+}
+.user_stories > p {
+  margin: 0 0 25px;
+}
+.image-card img {
+  width: 100%;
+}
+/* .fav_tool_text {
+  width: 70%;
+} */
+.right_icon img{
+  height: 19%;
+  width: 23%;
+}
+.left_icon img {
+  width: 32%;
+  height: 24%;
+}
+
+.FQA {
+  padding: 60px 0;
+}
+.accordion-content.active 
+.accordion-text {
+  height: 130px;
+}
+.copyright {
+  max-width: 82%;
+}
+}
+

@@ -37,14 +37,18 @@
             </div>
             <div class="form">
                 <form action="text">
-                    <input type="text" placeholder="Enter your name">
+                    <input class="input_container" type="text" placeholder="Enter your name">
                 </form>
                 <button class="btn">Start Now</button>
             </div>
         </section>
 
         <section class="main_picture">
-            <img src="images/Picture 01.png" alt="Organization_Picture">
+            <!-- <img src="images/Picture 01.png" alt="Organization_Picture"> -->
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/People_picture.png">
+                <img src="images/Picture 01.png" alt="Group_People">
+            </picture>
         </section>
     </section>
 
@@ -54,12 +58,16 @@
                 <p>Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</p> 
                 <button class="btn">Start Now</button>
             </div>
-            <section class="main_section_picture_1">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/Frame_48.png">
+                <img src="images/Frame 47.png" alt="Chart_Picture">
+            </picture>
+            <!-- <section class="main_section_picture_1">
                 <img src="images/Frame 47.png" alt="Chart_Picture">
             </section>
             <section class="main_section_picture2">
                 <img src="images/Frame 48.png" alt="Chart_Picture">
-            </section>
+            </section> -->
     </section>
     
     <section class="users ">
@@ -271,7 +279,7 @@
             <p>Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</p>
         </div>
 
-        
+
         <!-- Frequently asked question -->
         <div class="accordion">
             <div class="accordion-content">
